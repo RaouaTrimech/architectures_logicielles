@@ -1,13 +1,11 @@
-package com.directi.training.lsp.exercise;
+package com.directi.training.lsp.exercise.correction;
 
 public class Pool
 {
-    public void run()
+    public void run(Duck... ducks)
     {
-    	Duck donaldDuck = new Duck();
-        Duck electricDuck = new ElectronicDuck();
-        quack(donaldDuck, electricDuck);
-        swim(donaldDuck, electricDuck);
+        quack(ducks);
+        swim(ducks);
     }
 
     private void quack(Duck... ducks)
@@ -27,6 +25,9 @@ public class Pool
     public static void main(String[] args)
     {
         Pool pool = new Pool();
-        pool.run();
+        Duck donaldDuck = new Duck();
+        Duck electricDuck = new ElectronicDuck();
+        pool.run(donaldDuck, electricDuck);
     }
 }
+

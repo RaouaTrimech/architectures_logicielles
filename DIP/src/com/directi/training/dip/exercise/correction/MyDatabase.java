@@ -1,11 +1,9 @@
-package com.directi.training.dip.exercise;
+package com.directi.training.dip.exercise.correction;
 
 import java.util.HashMap;
 import java.util.Map;
 
-import com.directi.training.dip.exercise.correction.IDatabase;
-
-public class MyDatabase 
+public class MyDatabase implements IDatabase 
 {
     private static Map<Integer, String> _data = new HashMap<>();
     private static int _count = 0;

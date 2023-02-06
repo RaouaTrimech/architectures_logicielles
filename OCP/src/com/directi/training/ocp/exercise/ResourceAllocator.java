@@ -30,6 +30,7 @@ public class ResourceAllocator
         case TIME_SLOT:
             markTimeSlotFree(resourceId);
             break;
+            
         case SPACE_SLOT:
             markSpaceSlotFree(resourceId);
             break;
@@ -41,6 +42,8 @@ public class ResourceAllocator
 
     private void markSpaceSlotFree(int resourceId)
     {
+    	
+    	
     }
 
     private void markTimeSlotFree(int resourceId)
